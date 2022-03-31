@@ -1,0 +1,73 @@
+body{
+    background-image: url(/fundo.jpg);
+    background-position: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caixa{
+    border-radius: 05px;
+    border-color: #DB1302;
+    width:top;
+}
+
+.title-main{
+    text-align: center;
+    font-family: Dungeon Regular;
+    font-size: 80px;
+    background-image: linear-gradient(#DB1302, #04DB00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 1.5px; 
+    -webkit-text-stroke-color: #000000;
+    color: transparent;
+}
+
+.text{
+    text-align: center;
+    color:#EBA704 ;
+    font-family: Dungeon Regular;
+    font-size: 35px;
+}
+
+.espaco{
+    text-align: center;
+    color:white;
+    padding: 20px;
+}
+
+#valor{
+    width:180px;
+    height:45px;
+    text-align: center;
+    border-radius: 12px;
+    border-color: brown;
+    opacity: 85%;
+}
+
+
+.acao{
+    text-align: center;
+    color:white;
+    padding: 40px;
+    font-size: 25px;
+    opacity: 90%;
+}
+
+.botao{
+    width:200px;
+    height:45px;
+    opacity: 70%;
+    background-color:sienna;
+    box-shadow: 03px 03px 03px 03px;
+}
+
+#resultadoFinal{
+    text-align: center;
+    color:white;
+    font-family: Dungeon Regular;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    
+}

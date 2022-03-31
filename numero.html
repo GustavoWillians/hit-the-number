@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerte o numero!</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="caixa">
+        <h1 class="title-main"> Descubra o numero escondido! </h1>
+
+        <p class="text"> Um enigma é colocado a sua frente por uma criatura meiga e amigavel, descubra sua charada! </p>
+
+
+        <div class="espaco">
+            <input type="number" id="valor" placeholder="Digite aqui o valor:">
+        </div>
+
+        <div class="acao">
+            <button type="submite" class="botao" onclick="Advinhar()"><strong>Advinhar</strong></button>
+        </div>
+
+        <div>
+            <h3 id="resultadoFinal"></h3>
+        </div>
+    </div>
+
+
+</body>
+
+
+<script>
+
+    function Advinhar() {
+        var magica = parseInt(Math.random() * 11);
+        console.log(magica);
+
+        var caixaResultado = document.getElementById("resultadoFinal");
+
+        var valor = parseInt(document.getElementById("valor").value);
+        console.log(valor);
+
+        if (valor == magica) {
+            caixaResultado.innerHTML = "Você acertou, a criatura pula de alegria!"
+        } else if (valor > 10 || valor < 0) {
+            caixaResultado.innerHTML = "A criatura não sabe contar tanto assim"
+        } else {
+            caixaResultado.innerHTML = "Numero errado, a criatura quer que você tente novamente"
+        }
+
+    }
+
+
+
+</script>
+
+</html>
